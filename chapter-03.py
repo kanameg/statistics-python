@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
-from pyparsing import line
 
 # フォント設定
 plt.rcParams["font.family"] = "HackGen"
