@@ -15,8 +15,6 @@
 # -----------------------------------------------------------------
 # ライブラリのインポートとデータの読み込み
 # -----------------------------------------------------------------
-from tokenize import group
-
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -66,3 +64,9 @@ grouped_sp.count()["body_mass_g"]
 # ------------------------------------------------------------
 # ヒストグラム
 # ------------------------------------------------------------
+
+# 6-12. 魚の種類ごとのヒストグラム
+bins = np.arange(2, 11, 1)
+bins
+sns.histplot(x="length", hue="species", data=fish_multi_df, bins=bins, palette="gray")
+plt.show()
